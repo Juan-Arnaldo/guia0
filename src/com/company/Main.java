@@ -14,6 +14,8 @@ public class Main {
             System.out.println("Ingrese el numero del ejercicio (1-18): ");
             ejer = sc.nextInt();
 
+            limpiar(10);
+
             switch (ejer){
                 case 1:
                     ejer1();
@@ -74,7 +76,7 @@ public class Main {
                     break;
             }
 
-            System.out.println("Pulse 1 si desea ver otro ejercicio, de lo contrario 0");
+            System.out.println("\nPulse un numero distinto a 0 si desea ver otro ejercicio");
             ejer = sc.nextInt();
 
         }while(ejer <=18 && ejer >0);
@@ -84,11 +86,11 @@ public class Main {
     }
 
     public static void ejer1(){
-        //Programa java que realice lo siguiente: declarar una variable N de tipo int, una
-        //variable A de tipo double y una variable C de tipo char y asigna a cada una un valor.
-        //A continuación muestra por pantalla: El valor de cada variable, la suma de N + A, la
-        //diferencia de A - N, el valor numérico correspondiente al carácter que contiene la
-        //variable C.
+
+        System.out.println("Programa java que realice lo siguiente: declarar una variable N de tipo int, una\n" +
+                "variable A de tipo double y una variable C de tipo char y asigna a cada una un valor.\n" +
+                "A continuación muestra por pantalla: El valor de cada variable, la suma de N + A, la\n" +
+                "diferencia de A - N, el valor numérico correspondiente al carácter que contiene la variable C.\n");
 
         int A = 5;
         double B = 3.5;
@@ -101,9 +103,9 @@ public class Main {
     }
     public static void ejer2(){
 
-        //Programa java que realice lo siguiente: declarar dos variables X e Y de tipo int, dos
-        //variables N y M de tipo double y asigna a cada una un valor. A continuación mostrar
-        //por pantalla una serie de operaciones entre ellas.
+        System.out.println("Programa java que realice lo siguiente: declarar dos variables X e Y de tipo int, dos\n" +
+                "variables N y M de tipo double y asigna a cada una un valor. A continuación mostrar\n" +
+                "por pantalla una serie de operaciones entre ellas.\n");
 
         int A = 2;
         int B = 10;
@@ -117,9 +119,9 @@ public class Main {
     }
     public static void ejer3(){
 
-        //Programa Java que declare una variable entera N, asignarle un valor. A continuación
-        //escribe las instrucciones que realicen lo siguiente: incrementar N en 77, reducir su
-        //valor a 3, duplicar su valor.
+        System.out.println("Programa Java que declare una variable entera N, asignarle un valor. A continuación\n" +
+                "escribe las instrucciones que realicen lo siguiente: incrementar N en 77, reducir su\n" +
+                "valor a 3, duplicar su valor.\n");
 
         int N = 5 ;
 
@@ -129,9 +131,9 @@ public class Main {
     }
     public static void ejer4(){
 
-        //Programa java que declare cuatro variables enteras A, B, C y D y asignarle un valor a
-        //cada una. A continuación realiza las instrucciones necesarias para que: B tome el
-        //valor de C, C tome el valor de A, A tome el valor de D, D tome el valor de B.
+        System.out.println("Programa java que declare cuatro variables enteras A, B, C y D y asignarle un valor a\n" +
+                "cada una. A continuación realiza las instrucciones necesarias para que: B tome el\n" +
+                "valor de C, C tome el valor de A, A tome el valor de D, D tome el valor de B.\n");
 
         int a = 1;
         int b = 2;
@@ -157,8 +159,9 @@ public class Main {
 
     }
     public static void ejer5(){
-        //Programa Java que declare una variable A de tipo entero, asignarle un valor. A
-        //continuación mostrar un mensaje indicando si A es par o impar.
+
+        System.out.println("Programa Java que declare una variable A de tipo entero, asignarle un valor. A\n" +
+                "continuación mostrar un mensaje indicando si A es par o impar.\n");
 
         int A ;
         Scanner sc = new Scanner(System.in);
@@ -175,8 +178,9 @@ public class Main {
 
     }
     public static void ejer6(){
-        //Programa Java que declare una variable B de tipo entero y asignarle un valor. A
-        //continuación mostrar un mensaje indicando si el valor de B es positivo o negativo.
+
+        System.out.println("Programa Java que declare una variable B de tipo entero y asignarle un valor. A\n" +
+                "continuación mostrar un mensaje indicando si el valor de B es positivo o negativo.");
 
         Scanner sc = new Scanner(System.in);
 
@@ -194,10 +198,10 @@ public class Main {
 
     }
     public static void ejer7(){
-        //Programa Java que declare una variable C de tipo entero y asignarle un valor. A
-        //continuación mostrar un mensaje indicando si el valor de C es positivo o negativo,
-        //si es par o impar, si es múltiplo de 5, si es múltiplo de 10 y si es mayor o menor que
-        //100.
+
+        System.out.println("Programa Java que declare una variable C de tipo entero y asignarle un valor. A\n" +
+                "continuación mostrar un mensaje indicando si el valor de C es positivo o negativo,\n" +
+                "si es par o impar, si es múltiplo de 5, si es múltiplo de 10 y si es mayor o menor que 100.\n");
 
         Scanner sc = new Scanner(System.in);
         int num;
@@ -231,8 +235,8 @@ public class Main {
 
     }
     public static void ejer8(){
-        //Programa Java que lea un nombre y muestre por pantalla:
-        //“Buenos días, {NOMBRE}”.
+        System.out.println("Programa Java que lea un nombre y muestre por pantalla:\n" +
+                "“Buenos días, {NOMBRE}”.\n");
 
         String nombre;
 
@@ -245,8 +249,8 @@ public class Main {
 
     }
     public static void ejer9(){
-        //Programa Java que lea un número entero por teclado y calcule el doble y el triple de
-        //ese número y lo muestre por pantalla.
+        System.out.println("Programa Java que lea un número entero por teclado y calcule el doble y el triple de\n" +
+                "ese número y lo muestre por pantalla.\n");
 
         int num;
 
@@ -263,8 +267,7 @@ public class Main {
 
     }
     public static void ejer10(){
-        //Programa que lea una cantidad de grados Fahrenheit y lo convierta a grados
-        //centígrados.
+        System.out.println("Programa que lea una cantidad de grados Fahrenheit y lo convierta a grados centígrados.\n");
 
         double temp;
 
@@ -277,8 +280,8 @@ public class Main {
 
     }
     public static void ejer11(){
-        //Programa que lee por teclado el valor del radio de una circunferencia, calcula y
-        //muestra por pantalla la longitud y el área de la circunferencia.
+        System.out.println("Programa que lee por teclado el valor del radio de una circunferencia, calcula y\n" +
+                "muestra por pantalla la longitud y el área de la circunferencia.");
 
         double r;
 
@@ -292,7 +295,7 @@ public class Main {
 
     }
     public static void ejer12(){
-        // Programa que pase una velocidad en Km/h a m/s. La velocidad se lee por teclado
+        System.out.println("Programa que pase una velocidad en Km/h a m/s. La velocidad se lee por teclado\n");
 
         double v;
 
@@ -305,8 +308,8 @@ public class Main {
 
     }
     public static void ejer13(){
-        // Programa que lea la longitud de los catetos de un triángulo rectángulo y calcule la
-        //longitud de la hipotenusa según el teorema de Pitágoras.
+        System.out.println("Programa que lea la longitud de los catetos de un triángulo rectángulo y calcule la\n" +
+                "longitud de la hipotenusa según el teorema de Pitágoras.\n");
 
         Scanner sc = new Scanner(System.in);
 
@@ -325,7 +328,7 @@ public class Main {
 
     }
     public static void ejer14(){
-        // Programa que calcula el volumen de una esfera.
+        System.out.println("Programa que calcula el volumen de una esfera.");
 
         Scanner sc = new Scanner(System.in);
 
@@ -338,10 +341,11 @@ public class Main {
 
     }
     public static void ejer15(){
+        //Programa que calcula el área de un triángulo a partir de la longitud de sus lados.
 
     }
     public static void ejer16(){
-        // 16. Programa que lee un número de 3 cifras y muestra sus cifras por separado.
+        System.out.println("Programa que lee un número de 3 cifras y muestra sus cifras por separado.\n");
 
         Scanner sc = new Scanner(System.in);
 
@@ -354,13 +358,12 @@ public class Main {
 
         String dig[] = cadena.split("(?<=.)");
 
-        for(int r = 0; r < 3; r++){
+        for(int r = 0; r < dig.length; r++){
             System.out.println(dig[r]);
         }
     }
     public static void ejer17(){
-        // Programa que lea un número entero N de 5 cifras y muestre las cifras que ocupan
-        //posiciones impares.
+        System.out.println("Programa que lea un número entero N de 5 cifras y muestre las cifras que ocupan posiciones impares.\n");
 
         Scanner sc = new Scanner(System.in);
 
@@ -379,8 +382,8 @@ public class Main {
     }
 
     public static void ejer18(){
-        // Programa que lea tres números enteros H, M, S que contienen hora, minutos y
-        //segundos respectivamente, y comprueba si la hora que indican es una hora válida.
+        System.out.println("Programa que lea tres números enteros H, M, S que contienen hora, minutos y\n" +
+                "segundos respectivamente, y comprueba si la hora que indican es una hora válida.\n");
 
         Scanner sc = new Scanner(System.in);
 
@@ -498,8 +501,16 @@ public class Main {
 
     //Para sacar el volumen de una esfera
     public static double volumenEsfera(double r){
-        double v = 3/4 * 3.14 * Math.pow(r, 3);
+        double v = 4/3 * 3.14;
+        v = v * Math.pow(r, 3);
         return v;
     }
 
+    public static void limpiar(int lineas)
+    {
+        for (int i=0; i < lineas; i++)
+        {
+            System.out.println("");
+        }
+    }
 }
